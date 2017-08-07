@@ -25,8 +25,8 @@ void Update()
 	}
 	countdown -=Time.deltaTime;
 
-// Ucina miejsca po przecinku nie zaokrąglając
-	waveCountdownText.text = Mathf.Floor(countdown).ToString();
+// Ucina miejsca po przecinku nie zaokrąglając .Floor
+	waveCountdownText.text = Mathf.Round(countdown).ToString();
 }
 
 IEnumerator SpawnWave()
